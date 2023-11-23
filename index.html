@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/slick.css" />
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css" />
+        
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+        <script type="text/javascript" src="./js/slick/slick.min.js"></script>
+        
+        <link rel="icon" type="image/png" href="./img/logo.png" />
+        
+        <title>sellfarm publishing</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <nav>
+                    <div class="gnb">
+                        <div class="gnb-wrap">
+                            <div class="nav-list">
+                                <div class="logo">
+                                    <a href="https://sellfarm.co.kr">
+                                        <img src="./img/logo.png" alt="sellfarm logo" />
+                                    </a>
+                                </div>
+                                <form action="https://sellfarm.co.kr/shop/search.php">
+                                    <input class="search-input" type="text" name="q" value="" placeholder="검색어를 입력하세요">
+                                    <button type="submit">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 21L16.1667 16.1667M18.7778 9.88889C18.7778 14.7981 14.7981 18.7778 9.88889 18.7778C4.97969 18.7778 1 14.7981 1 9.88889C1 4.97969 4.97969 1 9.88889 1C14.7981 1 18.7778 4.97969 18.7778 9.88889Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="nav-btn">
+                                <div class="login-btn">
+                                    <a href="https://sellfarm.co.kr/bbs/login.php?url=%2F">로그인</a>
+                                </div>
+                                <div class="signup-btn">
+                                    <a href="https://sellfarm.co.kr/bbs/signup_select.php?url=%2F">회원가입</a>
+                                </div>
+                            </div>
+                            <div class="ham-tab">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 12H21M3 6H21M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gnb-list">
+                        <div class="lnb-wrap">
+                            <ul class="lnb-list">
+                                <li class="lnb-item">
+                                    <a href="javascript:void(0);" class="item">전체</a>
+                                </li>
+                                <li class="lnb-item">
+                                    <a href="javascript:void(0);" class="item">농산물</a>
+                                </li>
+                                <li class="lnb-item">
+                                    <a href="javascript:void(0);" class="item">수산물</a>
+                                </li>
+                                <li class="lnb-item">
+                                    <a href="javascript:void(0);" class="item">축산물</a>
+                                </li>
+                                <li class="lnb-item">
+                                    <a href="javascript:void(0);" class="item">밀키트</a>
+                                </li>
+                                <li class="lnb-item">
+                                    <a href="javascript:void(0);" class="item">과일</a>
+                                </li>
+                                <li class="lnb-item">
+                                    <a href="javascript:void(0);" class="item">기타</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <aside class="floatingSideMenu">
+                <div class="logo-area">
+                    <img src="./img/logo-symbol.png" class="logo-item"  alt="sellfarm-logo" />
+                </div>
+                <div class="txt-area">
+                    <ul class="sideMenu-list">
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="최근 본 상품" class="item">최근 본 상품</a>
+                        </li>
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="장바구니" class="item">장바구니</a>
+                        </li>
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="공지사항" class="item">공지사항</a>
+                        </li>
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="품질 / 재입고" class="item">품절 / 재입고</a>
+                        </li>
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="상품 정보 변동" class="item">상품 정보 변동</a>
+                        </li>
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="FAQ" class="item">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main>
+                <section class="mainBanner">
+                    <ul class="main-banner-slick">
+                        <li class="main-area first">
+                            <div class="main-wrap">
+                                <div class="main-text-wrap">
+                                    <div class="main-text">
+                                        <div class="main-title">
+                                            <p class="title">국내에서
+                                                <span class="title-dots">가장<span class="dots-wrap"><span class="dots"></span><span class="dots"></span></span></span>
+                                                <span class="title-dots">
+                                                    저렴한
+                                                    <span class="dots-wrap">
+                                                        <span class="dots"></span>
+                                                        <span class="dots"></span>
+                                                        <span class="dots"></span>
+                                                    </span>
+                                                </span> <br />
+                                                농수산 도매몰
+                                            </p>
+                                        </div>
+                                        <div class="main-detail-txt">
+                                            셀팜에서는 최상급의 상품을 최저가로 공급합니다.<br />
+                                            고객이 만족하는 "싸고 좋은" 상품을<br />
+                                            셀팜에서 만나보세요.
+                                        </div>
+                                    </div>
+                                    <div class="main-btn">
+                                        <a href="javascript:void(0);" class="btn-item">
+                                            <div class="btn">커뮤니티 바로가기</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main-img">
+                                    <img src="./img/main-banner-01.png" alt="main-banner-img" class="item-pc" />
+                                    <img src="./img/main-banner-mob-01.png" alt="main-banner-img" class="item" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-area bg second">
+                            <div class="main-wrap">
+                                <div class="main-text-wrap">
+                                    <div class="main-text">
+                                        <div class="main-title">
+                                            <p class="title">
+                                                가격과 품질의<br />황금 밸런스
+                                            </p>
+                                        </div>
+                                        <div class="main-detail-txt">
+                                            셀팜에서 제공하는 수 천가지의 상품을 최저가로 만나보세요<br />
+                                            오직 셀팜에서만 가능합니다
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-img">
+                                    <img src="./img/main-banner-mob-02.png" alt="main-banner-img" class="item" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-area bg thrid">
+                            <div class="main-wrap">
+                                <div class="main-text-wrap">
+                                    <div class="main-text">
+                                        <div class="main-title">
+                                            <p class="title">
+                                                껍질 제거한<br />포항 구룡포 과메기
+                                            </p>
+                                        </div>
+                                        <div class="main-detail-txt">
+                                            셀팜에서 제공하는 수 천가지의 상품을 최저가로 만나보세요<br />
+                                            오직 셀팜에서만 가능합니다
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-img">
+                                    <img src="./img/main-banner-mob-03.png" alt="main-banner-img" class="item" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-area bg fourth">
+                            <div class="main-wrap">
+                                <div class="main-text-wrap">
+                                    <div class="main-text">
+                                        <div class="main-title">
+                                            <p class="title">
+                                                남다른 신선함<br />셀팜 축산
+                                            </p>
+                                        </div>
+                                        <div class="main-detail-txt">
+                                            셀팜에서 제공하는 수 천가지의 상품을 최저가로 만나보세요<br />
+                                            오직 셀팜에서만 가능합니다
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-img">
+                                    <img src="./img/main-banner-mob-04.png" alt="main-banner-img" class="item" />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pager">
+                        <div class="prev-btn">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="25" fill="white" fill-opacity="0.1"/>
+                                <rect x="1" y="1" width="48" height="48" rx="24" stroke="#3A4D39" stroke-opacity="0.1" stroke-width="2"/>
+                                <path d="M27 17L19 25L27 33" stroke="#3A4D39" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="next-btn">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="25" fill="white" fill-opacity="0.1"/>
+                                <rect x="1" y="1" width="48" height="48" rx="24" stroke="#3A4D39" stroke-opacity="0.1" stroke-width="2"/>
+                                <path d="M23 33L31 25L23 17" stroke="#3A4D39" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                </section>
+                <section class="guide">
+                    <div class="guide-wrap">
+                        <a href="javascript:void(0);" class="guide-link">
+                            <div class="guide-text">
+                                <div class="guide-title">셀팜 B2B 이용방법</div>
+                                <div class="guide-detail">
+                                    <div class="item">이용 가이드</div>
+                                    <div class="icon">
+                                        <svg width="28" height="6" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H29L23 1" stroke="#074737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guide-img">
+                                <img src="./img/guide.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="guide-wrap">
+                        <a href="https://open.kakao.com/o/gayd44Pf" class="guide-link">
+                            <div class="guide-text">
+                                <div class="guide-title">셀팜 B2B 커뮤니티</div>
+                                <div class="guide-detail">
+                                    <div class="item">커뮤니티</div>
+                                    <div class="icon">
+                                        <svg width="28" height="6" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H29L23 1" stroke="#074737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guide-img">
+                                <img src="./img/guide-community.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section class="new">
+                    <div class="new-wrap">
+                        <div class="new-title">신상품</div>
+                        <div class="new-slick-area">
+                            <ul class="new-list">
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/102676/ETG1R_102676_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">한우 1등급 냉장 갈비살</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/101717/101717_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">고당도 맛있는 머스크 메론</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/101434/101458_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">표고버섯피클된장</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/103006/HMDOM_103006_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">자연산 손질 참돔(31-35cm)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="new-list">
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/100621/100621_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">양주골 동치미</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/102834/AbSUF_102834_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">베트남 드래곤 후르츠 용과</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/102063/144972fb-4883-4e0f-9f97-58fe7b94e11b_102063_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">스팀 초벌 한우소대창</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/103529/w60pd_103529_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">햇 곱창김 선물세트(무염산/지주식)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="pager">
+                                <div class="prev-btn">
+                                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2L2 10L10 18" stroke="black" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="next-btn">
+                                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 18L10 10L2 2" stroke="black" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-slick-area-mob">
+                            <ul class="new-list">
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/102676/ETG1R_102676_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">한우 1등급 냉장 갈비살</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/101717/101717_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">고당도 맛있는 머스크 메론</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/101434/101458_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">표고버섯피클된장</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/103006/HMDOM_103006_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">자연산 손질 참돔(31-35cm)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/100621/100621_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">양주골 동치미</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/102834/AbSUF_102834_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">베트남 드래곤 후르츠 용과</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/102063/144972fb-4883-4e0f-9f97-58fe7b94e11b_102063_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">스팀 초벌 한우소대창</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="new-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/103529/w60pd_103529_1.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">햇 곱창김 선물세트(무염산/지주식)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pager-mob">
+                            <div class="prev-btn">
+                                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2L2 10L10 18" stroke="black" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="next-btn">
+                                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 18L10 10L2 2" stroke="black" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bestSeller">
+                    <div class="bestSeller-wrap">
+                        <div class="bestSeller-text">
+                            <div class="bestSeller-title">
+                                주간 인기상품
+                            </div>
+                            <div class="bestSeller-category">
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="javascript:void(0);" class="item">전체</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="javascript:void(0);" class="item">농산물</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="javascript:void(0);" class="item">수산물</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="javascript:void(0);" class="item">축산물</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="javascript:void(0);" class="item">밀키트</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="javascript:void(0);" class="item on">과일</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="javascript:void(0);" class="item">김치</a>
+                                    </li>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="javascript:void(0);" class="item">기타</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bestSeller-goods-area">
+                            <ul class="goods-list">
+                                <li class="goods-item">
+                                    <a href="javascript:void(0);" class="item">
+                                        <div class="goods-wrap">
+                                            <img src="https://sellfarm.co.kr/data/item/102415/thumb-OJW2d_102415_1_300x300.jpg" alt="bestSeller-goods" />
+                                            <div class="goods-box"></div> 
+                                            <div class="goods-text">
+                                                <div class="goods-title">제주직송 타이벡 감귤 4.5kg</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="goods-list">
+                                <li class="goods-item">
+                                    <a href="javascript:void(0);" class="item">
+                                        <div class="goods-wrap">
+                                            <div class="goods-text">
+                                                <div class="goods-title">델몬트 바나나 2송이 2.6kg 내외</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div>
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/101483/thumb-101483_1_300x300.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="goods-item">
+                                    <a href="javascript:void(0);" class="item">
+                                        <div class="goods-wrap">
+                                            <div class="goods-text">
+                                                <div class="goods-title">브라질 애플망고</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div>
+                                            <div class="goods-img">
+                                                <img src="	https://sellfarm.co.kr/data/item/101749/thumb-101749_1_300x300.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="goods-item">
+                                    <a href="javascript:void(0);" class="item">
+                                        <div class="goods-wrap">
+                                            <div class="goods-text">
+                                                <div class="goods-title">제주직송 타이벡 감귤 4.5kg</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div>
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/103334/thumb-gOqA5_103334_1_300x300.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="mdsPick">
+                    <div class="mdsPick-wrap">
+                        <div class="mdsPick-title">MD 추천 상품</div>
+                        <div class="mdsPick-slick-area">
+                            <ul class="mdsPick-list">
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/103478/JeTVE_103487_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">꿀사과 정품 엔비사과</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/101433/101433_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">표고버섯피클고추장</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/101774/101776_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">별에서 온 동전쥐포 200g</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/100262/100252_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">한돈 뒷다리살(불고기용)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/100144/100144_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">팬시 레몬(개당 100g)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/100621/100621_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">양주골 동치미</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/102834/AbSUF_102834_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">베트남 드래곤 후르츠 용과</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/102063/144972fb-4883-4e0f-9f97-58fe7b94e11b_102063_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">스팀 초벌 한우소대창</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/103529/w60pd_103529_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">햇 곱창김 선물세트(무염산/지주식)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/103529/w60pd_103529_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">햇 곱창김 선물세트(무염산/지주식)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="pager">
+                                <div class="prev-btn">
+                                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2L2 10L10 18" stroke="black" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="next-btn">
+                                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 18L10 10L2 2" stroke="black" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdsPick-slick-area-mob">
+                            <ul class="mdsPick-list">
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/103478/JeTVE_103487_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">꿀사과 정품 엔비사과</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/101433/101433_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">표고버섯피클고추장</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/101774/101776_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">별에서 온 동전쥐포 200g</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/100262/100252_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">한돈 뒷다리살(불고기용)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/100144/100144_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">팬시 레몬(개당 100g)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/100621/100621_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">양주골 동치미</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/102834/AbSUF_102834_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">베트남 드래곤 후르츠 용과</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/102063/144972fb-4883-4e0f-9f97-58fe7b94e11b_102063_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">스팀 초벌 한우소대창</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/103529/w60pd_103529_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">햇 곱창김 선물세트(무염산/지주식)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mdsPick-item">
+                                    <a href="javascript:void(0);">
+                                        <div class="goods-wrap">
+                                            <div class="goods-img">
+                                                <img src="https://sellfarm.co.kr/data/item/103529/w60pd_103529_1.jpg" alt="bestSeller-goods" />
+                                            </div>
+                                            <div class="goods-text">
+                                                <div class="goods-title">햇 곱창김 선물세트(무염산/지주식)</div>
+                                                <div class="goods-detail-txt">로그인 후 확인</div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pager-mob">
+                            <div class="prev-btn">
+                                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2L2 10L10 18" stroke="black" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="next-btn">
+                                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 18L10 10L2 2" stroke="black" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section class="column"></section> -->
+            </main>
+            <footer>
+                <div class="footer-wrap">
+                    <div class="footer-guide">
+                        <ul class="guide-list">
+                            <li class="guide-item">
+                                <a href="javascript:void(0);" class="item" alt="이용약관">이용약관</a>
+                            </li>
+                            <li class="guide-item">
+                                <a href="javascript:void(0);" class="item" alt="개인정보처리방침">개인정보처리방침</a>
+                            </li>
+                            <li class="guide-item">
+                                <a href="javascript:void(0);" class="item" alt="공지사항">공지사항</a>
+                            </li>
+                            <li class="guide-item">
+                                <a href="javascript:void(0);" class="item" alt="이용가이드">이용가이드</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-txt">
+                        <div class="detail-txt">
+                            <ul class="detail-text-list">
+                                <li class="detailTxt-item">
+                                    <div class="title">상호명</div>
+                                    <div class="txt">셀팜 주식회사</div>
+                                </li>
+                                <li class="detailTxt-item">
+                                    <div class="title">대표자</div>
+                                    <div class="txt">노병곤</div>
+                                </li>
+                                <li class="detailTxt-item">
+                                    <div class="title">대표전화</div>
+                                    <div class="txt">010-9155-1684</div>
+                                </li>
+                            </ul>
+                            <ul class="detail-text-list">
+                                <li class="detailTxt-item">
+                                    <div class="title">사업자 등록번호</div>
+                                    <div class="txt">5138603322</div>
+                                </li>
+                                <li class="detailTxt-item">
+                                    <div class="title">통신판매업 신고</div>
+                                    <div class="txt">2023-서울서초-3046 호</div>
+                                </li>
+                            </ul>
+                            <ul class="detail-text-list">
+                                <li class="detailTxt-item">
+                                    <div class="title">주소</div>
+                                    <div class="txt">서울특별시 서초구 강남대로99길 45, 엠빌딩 6층</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-txt">
+                            <div class="bankInfo">
+                                <div class="title">BANK INFO</div>
+                                <div class="detail">
+                                    <p class="item">셀팜 주식회사</p>
+                                    <p class="item">신한은행 140-014-320235</p>
+                                </div>
+                            </div>
+                            <div class="csInfo">
+                                <div class="title">CS 운영시간</div>
+                                <div class="detail">
+                                    <p class="item">평일 09:30 ~ 17:30</p>
+                                    <p class="item">Break Time 12:00 ~ 13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <p class="copyright-item">Copyright ⓒ 2022 SELLFARM All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- <div class="container">
+            <header>
+                GNB
+            </header>
+            <aside class="floatingSideMenu">
+                <div class="logo-area">
+                    <img src="./img/logo-symbol.png" class="logo-item"  alt="sellfarm-logo" />
+                </div>
+                <div class="txt-area">
+                    <ul class="sideMenu-list">
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="최근 본 상품" class="item">최근 본 상품</a>
+                        </li>
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="장바구니" class="item">장바구니</a>
+                        </li>
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="공지사항" class="item">공지사항</a>
+                        </li>
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="품질 / 재입고" class="item">품절 / 재입고</a>
+                        </li>
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="상품 정보 변동" class="item">상품 정보 변동</a>
+                        </li>
+                        <li class="sideMenu-item">
+                            <a href="javascript:void(0);" alt="FAQ" class="item">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main>
+                <ssection class="mainBanner">
+                    width 100% 슬라이드 배너
+                </ssection>
+                <section class="guide">
+                    띠배너
+                </section>
+                <section class="new">
+                    신상품
+                </section>
+                <section class="bestSeller">
+                    베스트셀러
+                </section>
+                <section class="mdsPick">
+                    md 추천상품
+                </section>
+            </main>
+            <footer>
+                footer
+            </footer>
+        </div> -->
+
+
+
+        <!-- main banner 슬릭 스크립트 -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                $("main .mainBanner .main-banner-slick").slick({
+                slide: "li",
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2500,
+                draggable: true,
+                dots: true,
+                prevArrow: $("main .mainBanner .pager .prev-btn"),
+                nextArrow: $("main .mainBanner .pager .next-btn"),
+                speed: 2000,
+                cssEase:'ease-in-out',
+                touchThreshold: 100,
+                customPaging: function (silder, i) {
+                    return '<button class="custom-dot">' + '<!--' + (i + 1) + '-->' + "</button>";
+                },
+                });
+            });
+        </script>
+
+        <!-- new 슬릭 스크립트 -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                $("main .new .new-wrap .new-slick-area").slick({
+                slide: "ul",
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                draggable: false,
+                dots: false,
+                prevArrow: $("main .new .new-wrap .pager .prev-btn"),
+                nextArrow: $("main .new .new-wrap .pager .next-btn"),
+                speed: 1500,
+                // cssEase:'ease-in-out',
+                });
+            });
+        </script>
+
+        <!-- new mob 슬릭 스크립트 -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("main .new .new-slick-area-mob .new-list").slick({
+                    slide:'li',
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    autoplay: false,
+                    draggable: true,
+                    dots: false,
+                    prevArrow: $("main .new .pager-mob .prev-btn"),
+                    nextArrow: $("main .new .pager-mob .next-btn"),
+                    speed: 1500,
+                    // centerMode: true,
+                });
+            });
+        </script>
+
+        <!-- md's pick 슬릭 스크립트 -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                $("main .mdsPick .mdsPick-wrap .mdsPick-slick-area .mdsPick-list").slick({
+                slide: "li",
+                infinite: false,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                autoplay: false,
+                draggable: true,
+                dots: false,
+                prevArrow: $("main .mdsPick .mdsPick-wrap .pager .prev-btn"),
+                nextArrow: $("main .mdsPick .mdsPick-wrap .pager .next-btn"),
+                speed: 1500,
+                // cssEase:'ease-in-out',
+                });
+            });
+        </script>
+        
+        <!-- md's pick mob 슬릭 스크립트 -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                $("main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list").slick({
+                slide: "li",
+                infinite: false,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                autoplay: false,
+                draggable: false,
+                dots: false,
+                prevArrow: $("main .mdsPick .pager .prev-btn"),
+                nextArrow: $("main .mdsPick .pager .next-btn"),
+                speed: 1500,
+                // cssEase:'ease-in-out',
+                });
+            });
+        </script>
+
+        
+
+
+        <!-- Best Seller Tab Menu -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+            // 탭 변경을 처리하기 위한 이벤트 리스너 추가
+            $(".bestSeller-wrap .category-list li .item").click(function () {
+                // var activeTab = $(this).attr("data-tab");
+                $(".bestSeller-wrap .category-list li .item").removeClass("on");
+                $(".item").removeClass("on");
+                $(this).addClass("on");
+            });
+            });
+        </script>
+
+        <!-- floating Menu 동작 -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var floatingSideMenu = $(".floatingSideMenu");
+                var mainBanner = $(".mainBanner");
+                var footer = $("footer");
+
+                // 초기 상태에서의 Floating side menu 위치
+                var initialOffset = mainBanner.offset().top + mainBanner.outerHeight();
+
+                // Floating side menu 의 기본 스타일 설정
+                // floatingSideMenu.css({
+                //     top: initialOffset,
+                // });
+
+                // 스크롤 이벤트 감지
+                $(window).scroll(function () {
+                    // 현재 스크롤 위치
+                    var scrollPosition = $(this).scrollTop();
+
+                    // Floating side menu가 움직이기 시작할 위치 (mainBanner의 하단)
+                    var startMovingPosition = initialOffset;
+
+                    // Floating side menu가 멈추는 위치 (footer의 상단)
+                    var stopMovingPosition = footer.offset().top;
+
+                    // 스크롤 위치가 시작 위치보다 아래이고, 멈추는 위치보다 위에 있을 때만 움직임
+                    if (scrollPosition > startMovingPosition && scrollPosition + floatingSideMenu.outerHeight() < stopMovingPosition) {
+                        // Floating side menu의 새로운 위치 계산
+                        var newPosition = scrollPosition + 20; // 조정 가능한 여백 추가
+
+                        // Floating side menu 위치 조정
+                        floatingSideMenu.stop().animate({
+                            top: newPosition,
+                        }, 500); // 500은 애니메이션 속도, 조절 가능
+
+                    } else if (scrollPosition <= startMovingPosition) {
+                        // 스크롤이 시작 위치보다 위에 있을 때 초기 위치로 되돌림
+                        floatingSideMenu.stop().animate({
+                            top: initialOffset,
+                        }, 500);
+                    }
+                });
+            });
+        </script>
+
+        <!-- <script>
+            $(document).ready(function() {
+                var floatingMenu = $(".floatingSideMenu");
+                var mainBanner = $(".mainBanner");
+                var footer = $("footer");
+            
+                // 스크롤 이벤트 감지
+                $(window).scroll(function() {
+                    // mainBanner와 footer의 위치 정보 가져오기
+                    var bannerBottom = mainBanner.offset().top + mainBanner.outerHeight();
+                    var footerTop = footer.offset().top;
+            
+                    // 스크롤 위치
+                    var scrollPosition = $(this).scrollTop();
+            
+                    // mainBanner가 화면에서 사라진 경우
+                    if (scrollPosition > bannerBottom) {
+                        // floatingMenu를 나타나게 함
+                        floatingMenu.addClass("show");
+                    } else {
+                        // mainBanner가 화면에 있을 경우
+                        floatingMenu.removeClass("show");
+                    }
+            
+                    // footer가 화면에 나타나기 전
+                    if (scrollPosition + $(window).height() < footerTop) {
+                        // floatingMenu를 화면 하단에 고정
+                        floatingMenu.removeClass("bottom");
+                    } else {
+                        // footer가 화면에 나타난 경우
+                        floatingMenu.addClass("bottom");
+                    }
+                });
+            });
+            </script> -->
+
+            <!-- <script>
+                $(document).ready(function () {
+                    var floatingMenu = $(".floatingSideMenu");
+                    var mainBanner = $(".mainBanner");
+                    var footer = $("footer");
+
+                    // 원래 floatingMenu의 위치 정보 저장
+                    var floatingMenuOriginalTop = floatingMenu.offset().top;
+
+                    $(window).scroll(function () {
+                        var scrollTop = $(window).scrollTop();
+                        var mainBannerBottom = mainBanner.offset().top + mainBanner.height();
+
+                        // 스크롤이 mainBanner를 지나면서 footer 이전에 도달했을 때
+                        if (scrollTop > mainBannerBottom && scrollTop + floatingMenu.height() < footer.offset().top) {
+                            // floatingMenu를 고정 위치로 이동
+                            floatingMenu.css({
+                                position: "fixed",
+                                top: 0,
+                                left: "auto",
+                                right: "calc((100% - 1170px) / 2)", // 중앙 정렬 조정
+                            });
+                        } else {
+                            // 스크롤이 mainBanner 아래에 있지 않거나 footer에 도달한 경우
+                            // 기존 위치로 돌아감
+                            floatingMenu.css({
+                                position: "relative",
+                                top: floatingMenuOriginalTop,
+                                left: "auto",
+                                right: "auto",
+                            });
+                        }
+                    });
+                });
+            </script> -->
+
+        
+    </body>
+</html>
