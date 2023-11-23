@@ -765,8 +765,8 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
     main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item .goods-wrap .goods-text .goods-detail-txt{ font-size: 0.75rem; }
 
     main .mdsPick .mdsPick-wrap .pager-mob{ display: flex; position: absolute; width: 100%; bottom: calc((18.75rem / 2) + 0.5rem ); }
-    main .mdsPick .mdsPick-wrap .pager-mob .prev-btn{ position: absolute; left: -40px; }
-    main .mdsPick .mdsPick-wrap .pager-mob .next-btn{ position: absolute; right: -40px; }
+    main .mdsPick .mdsPick-wrap .pager-mob .prev-btn{ position: absolute; left: -10px; }
+    main .mdsPick .mdsPick-wrap .pager-mob .next-btn{ position: absolute; right: -10px; }
     main .mdsPick .mdsPick-wrap .pager{ display: none; }
 
 
