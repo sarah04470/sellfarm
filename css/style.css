@@ -615,7 +615,7 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
 
     header nav .gnb .ham-tab{ display: flex; align-items: center; }
 
-    header nav .gnb-list{ width: 100%; height: 5rem; border-bottom: 1px solid #074737; box-shadow: 0 0.25rem 0.5rem 0 rgba(7, 71, 55, 0.1); display: flex; align-items: center; }
+    header nav .gnb-list{ width: 100%; height: 3rem; border-bottom: 1px solid #074737; box-shadow: 0 0.25rem 0.5rem 0 rgba(7, 71, 55, 0.1); display: flex; align-items: center; }
     header nav .gnb-list .lnb-wrap{ width: 90%; margin: 0 auto; }
     header nav .gnb-list .lnb-wrap .lnb-list{ width: 100%; display: flex; flex-direction: row; gap: 1.25rem; justify-content: flex-start; align-items: center; }
     header nav .gnb-list .lnb-wrap .lnb-list .lnb-item{  }
@@ -637,7 +637,7 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
 
 
     /* main start */
-    main{ padding-top: 11.25rem; z-index: 0; }
+    main{ padding-top: 9.25rem; z-index: 0; }
     main .mainBanner{ width: 100%; height: auto; margin-bottom: 5rem; }
     main .mainBanner .main-banner-slick{ width: 100vw; height: 400px; }
     main .mainBanner .main-area{ display: flex;  }
@@ -665,10 +665,10 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
     main .mainBanner .main-area .main-wrap .main-text-wrap .main-btn .btn-item .btn{  }
 
 
-    main .mainBanner .pager{ position: absolute; width: 100%; top: calc(50% - 1.563rem); }
-    main .mainBanner .pager .prev-btn{ position: absolute; left: 1.875rem; }
-    main .mainBanner .pager .next-btn{ position: absolute; right: 1.875rem; }
-    main .mainBanner .pager rect{ transition: all 0.5s; }
+    main .mainBanner .pager{ position: absolute; width: 100%; top: calc(50% - 0.5rem); }
+    main .mainBanner .pager .prev-btn{ position: absolute; left: 1.25rem; }
+    main .mainBanner .pager .next-btn{ position: absolute; right: 1.25rem; }
+    main .mainBanner .pager rect{ display: none; }
     main .mainBanner .pager .prev-btn:hover rect,
     main .mainBanner .pager .next-btn:hover rect{ fill-opacity: 0.3; stroke-opacity: 0.3; }
     main .mainBanner .slick-dots{ position: absolute; display: flex; flex-direction: row; gap: 0.625rem; left: calc(50% - 5.313rem); bottom: 1.25rem; list-style-type: none; font-size: 0; }
@@ -713,7 +713,7 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
 
 
     main .bestSeller{  margin-bottom: 5rem; width: 100%; height: auto; padding: 80px 0; background-color: #CDDBD8; }
-    main .bestSeller .bestSeller-wrap{ position: relative; width: 90%; max-width: 1360px; height: 100%; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1.75rem; }
+    main .bestSeller .bestSeller-wrap{ position: relative; width: 90%; max-width: 1360px; height: 100%; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 3rem; }
     main .bestSeller .bestSeller-wrap .bestSeller-text{ display: flex; flex-direction: column; gap: 2.5rem; align-items: center; }
     main .bestSeller .bestSeller-wrap .bestSeller-text .bestSeller-title{ font-size: 1.25rem; font-weight: 700; }
     main .bestSeller .bestSeller-wrap .bestSeller-text .bestSeller-category{  }
@@ -742,31 +742,31 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
     main .bestSeller .bestSeller-wrap .bestSeller-goods-area .goods-list:first-of-type .goods-item:hover .item .goods-wrap img{  }
     main .bestSeller .bestSeller-wrap .bestSeller-goods-area .goods-list:first-of-type .goods-item .item .goods-wrap .goods-box{ display: none; }
     main .bestSeller .bestSeller-wrap .bestSeller-goods-area .goods-list:first-of-type .goods-item .item .goods-wrap .goods-text{ position: relative; left: auto; bottom: auto; color: #000; display: flex; flex-direction: column; gap: 0.625rem; }
-    main .bestSeller .bestSeller-wrap .bestSeller-goods-area .goods-list:first-of-type .goods-item .item .goods-wrap .goods-text .goods-title{ width: 7.5rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1rem; font-weight: 600; }
+    main .bestSeller .bestSeller-wrap .bestSeller-goods-area .goods-list:first-of-type .goods-item .item .goods-wrap .goods-text .goods-title{ width: 90%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1rem; font-weight: 600; }
     main .bestSeller .bestSeller-wrap .bestSeller-goods-area .goods-list:first-of-type .goods-item .item .goods-wrap .goods-text .goods-detail-txt{ font-size: 0.75rem; }
 
 
     main .mdsPick{ margin-bottom: 12.5rem; width: 100%; }
-    main .mdsPick .mdsPick-wrap{ position: relative; display: flex; width: 90%; max-width: none; flex-direction: column; gap: 3.75rem; justify-content: center; align-items: center; margin: 0 auto; }
+    main .mdsPick .mdsPick-wrap{ position: relative; display: flex; width: 18.75rem; max-width: none; flex-direction: column; gap: 3.75rem; justify-content: center; align-items: center; margin: 0 auto; }
     main .mdsPick .mdsPick-wrap .mdsPick-title{ font-size: 1.25rem; font-weight: 700; }
     main .mdsPick .mdsPick-wrap .mdsPick-slick-area{ display: none; }
     main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob{ display: block; }
-    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .slick-list{ position: relative; left: 0.625rem; overflow: hidden; }
-    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .slick-track{ display: flex; flex-direction: row; gap: 0; }
-    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list{ display: flex; flex-direction: row; gap: 2.5rem; }
+    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .slick-list{ position: relative; left: -0.3125rem; overflow: hidden; }
+    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .slick-track{ display: flex; flex-direction: row; gap: 0.625rem; }
+    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list{ display: flex; flex-direction: row; gap: 0; }
     main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item{  }
     main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item a{ text-decoration: none; }
-    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item .goods-wrap{ display: flex; flex-direction: column; gap: 1.25rem; width: 8.75rem; justify-content: space-between; }
-    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item .goods-wrap .goods-img{ width: 8.75rem; height: 8.75rem; border-radius: 1.25rem; overflow: hidden; }
+    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item .goods-wrap{ display: flex; flex-direction: column; gap: 0.625rem; width: 8.75rem; justify-content: space-between; }
+    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item .goods-wrap .goods-img{ width: 8.75rem; height: 8.75rem; border-radius: 0.625rem; overflow: hidden; }
     main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item .goods-wrap .goods-img img{ width: 8.75rem; height: 8.75rem; transition: all 0.3s; }
     main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item:hover .goods-wrap .goods-img img{ transform: scale(1.03); }
     main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item .goods-wrap .goods-text{ display: flex; flex-direction: column; gap: 0.625rem; color: #000; padding-left: 0.5rem; }
-    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item .goods-wrap .goods-text .goods-title{ width: 13.125rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1rem; font-weight: 600; }
+    main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item .goods-wrap .goods-text .goods-title{ width: 7.5rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1rem; font-weight: 600; }
     main .mdsPick .mdsPick-wrap .mdsPick-slick-area-mob .mdsPick-list .mdsPick-item .goods-wrap .goods-text .goods-detail-txt{ font-size: 0.75rem; }
 
-    main .mdsPick .mdsPick-wrap .pager-mob{ display: flex; position: absolute; width: 100%; bottom: calc((18.75rem / 2) + 0.5rem ); }
-    main .mdsPick .mdsPick-wrap .pager-mob .prev-btn{ position: absolute; left: -10px; }
-    main .mdsPick .mdsPick-wrap .pager-mob .next-btn{ position: absolute; right: -10px; }
+    main .mdsPick .mdsPick-wrap .pager-mob{ display: flex; position: absolute; width: 100%; bottom: calc((15rem / 2) + 0.5rem ); }
+    main .mdsPick .mdsPick-wrap .pager-mob .prev-btn{ position: absolute; left: -20px; }
+    main .mdsPick .mdsPick-wrap .pager-mob .next-btn{ position: absolute; right: -20px; }
     main .mdsPick .mdsPick-wrap .pager{ display: none; }
 
 
