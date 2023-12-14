@@ -156,7 +156,7 @@ main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list 
 main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ display: flex; width: 100%; height: 100px; text-align: center; align-items: center; justify-content: center; color: #777; font-size: 20px; font-weight: 400; transition: all 0.3s; }
 main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item.on{ color: #000; font-weight: 700; }
 main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap{ width: 100%; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item{ display: flex; justify-content: center; align-items: center; }
+main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item{ display: none; justify-content: center; align-items: center; }
 main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item .item{ width: 80%; height: auto; transition: all 0.3s; }
 
 

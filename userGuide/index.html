@@ -607,31 +607,28 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // 모든 lnb-item 요소를 가져옵니다.
             var tabs = document.querySelectorAll('.lnb-item');
+            var guideItems = document.querySelectorAll('.guide-img-item');
 
-            // 각 탭에 클릭 이벤트 리스너를 추가합니다.
+            // 초기에 첫 번째 탭의 이미지만 표시
+            guideItems[0].style.display = 'flex';
+            guideItems[0].style.opacity = '1';
+
             tabs.forEach(function(tab) {
                 tab.addEventListener('click', function() {
                     var selectedTab = this.querySelector('.item').getAttribute('data-tab');
 
-                    // 모든 lnb-item에서 'on' 클래스를 제거합니다.
                     tabs.forEach(function(tab) {
                         tab.querySelector('.item').classList.remove('on');
                     });
 
-                    // 클릭된 lnb-item에 'on' 클래스를 추가합니다.
                     this.querySelector('.item').classList.add('on');
 
-                    // 모든 guide-img-item 요소를 숨깁니다.
-                    var guideItems = document.querySelectorAll('.guide-img-item');
                     guideItems.forEach(function(item) {
                         item.style.display = 'none';
                         item.style.opacity = '0';
-                        item.style.transition = 'all 0.3s ease in-out';
                     });
 
-                    // 선택된 data-tab에 해당하는 guide-img-item을 보여줍니다.
                     var activeItem = document.querySelector('.guide-img-item[data-tab="' + selectedTab + '"]');
                     if (activeItem) {
                         activeItem.style.display = 'flex';
