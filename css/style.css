@@ -160,15 +160,24 @@ header nav .gnb .ham-tab{ display: none; }
 header nav .gnb .ham-tab button{ outline: none; border: none; background-color: transparent; }
 header nav .gnb .ham-btn{ display: none; }
 
-header nav .gnb .nav-btn{ display: flex; flex-direction: row; gap: 0.625rem; align-items: center; font-family: 'Pretendard'; }
-header nav .gnb .nav-btn button{ display: flex; justify-content: center; align-items: center; width: 4rem; height: 1.875rem; border: 1px solid #074737; border-radius: 0.5rem; outline: none; transition: all 0.3s ease-in-out; cursor: pointer; padding: 0 !important; }
+header nav .gnb .nav-btn{ display: flex; flex-direction: row; gap: 2.5rem; align-items: center; font-family: 'Pretendard'; }
+header nav .gnb .nav-btn .menu-info-wrap{  }
+header nav .gnb .nav-btn .menu-info-wrap .menu-info-list{ display: flex; flex-direction: row; gap: 1.25rem; align-items: center;}
+header nav .gnb .nav-btn .menu-info-wrap .menu-info-list .menu-info-btn{  }
+header nav .gnb .nav-btn .menu-info-wrap .menu-info-list .menu-info-btn .btn-item{ padding: 0; padding-block: 0; padding-inline: 0; border: none; outline: none; background-color: transparent; }
+header nav .gnb .nav-btn .menu-info-wrap .menu-info-list .menu-info-btn .btn-item .item{ display: flex; flex-direction: row; align-items: center; gap: 0.75rem; }
+header nav .gnb .nav-btn .menu-info-wrap .menu-info-list .menu-info-btn .btn-item .item svg{  }
+header nav .gnb .nav-btn .menu-info-wrap .menu-info-list .menu-info-btn .btn-item .item .btn-text{ color: #000; }
+
 header nav .gnb .nav-btn button a{ text-decoration: none; font-size: 0.75rem; font-weight: 600; }
-header nav .gnb .nav-btn button:hover{ box-shadow: 0 0.25rem 0.5rem 0 rgba(7, 71, 55, 0.2); }
-header nav .gnb .nav-btn .login-btn{ background-color: #074737;  }
-header nav .gnb .nav-btn .login-btn a{ color: #fff; }
-header nav .gnb .nav-btn .login-btn:hover{ background-color: #042b21; }
-header nav .gnb .nav-btn .signup-btn{ background-color: #fff;  }
-header nav .gnb .nav-btn .signup-btn a{ color: #074737; }
+header nav .gnb .nav-btn .login-area{ display: flex; flex-direction: row; gap: 0.625rem; align-items: center; }
+header nav .gnb .nav-btn .login-area button{ display: flex; justify-content: center; align-items: center; width: 4rem; height: 1.875rem; border: 1px solid #074737; border-radius: 0.5rem; outline: none; transition: all 0.3s ease-in-out; cursor: pointer; padding: 0 !important; }
+header nav .gnb .nav-btn .login-area button:hover{ box-shadow: 0 0.25rem 0.5rem 0 rgba(7, 71, 55, 0.2); }
+header nav .gnb .nav-btn .login-area .login-btn{ background-color: #074737; }
+header nav .gnb .nav-btn .login-area .login-btn a{ color: #fff; }
+header nav .gnb .nav-btn .login-area .login-btn:hover{ background-color: #042b21; }
+header nav .gnb .nav-btn .login-area .signup-btn{ background-color: #fff; }
+header nav .gnb .nav-btn .login-area .signup-btn a{ color: #074737; }
 
 header nav .gnb-list{ width: 100%; height: 5rem; border-bottom: 1px solid #074737; box-shadow: 0 0.25rem 0.5rem 0 rgba(7, 71, 55, 0.1); display: flex; align-items: center; transition: all 0.3s; }
 header nav .gnb-list .lnb-wrap{ width: 75%; margin: 0 auto; }
@@ -367,6 +376,16 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
 **************************/
 
 @media screen and (min-width: 1024px) and (max-width: 1366px){
+
+    /* Header */
+    header nav .gnb .gnb-wrap{ width: 85%; }
+    header nav .gnb-list .lnb-wrap{ width: 85%; }
+    header nav .gnb .nav-list{ gap: 1.75rem; }
+    header nav .gnb .nav-list form .search-input{ width: 25rem; }
+    header nav .gnb .nav-btn{ gap: 1.75rem; }
+    header nav .gnb .nav-btn .menu-info-wrap .menu-info-list{ gap: 1rem; }
+    header nav .gnb .nav-btn .menu-info-wrap .menu-info-list .menu-info-btn .btn-item .item{ gap: 0.5rem; }
+    header nav .gnb .nav-btn .menu-info-wrap .menu-info-list .menu-info-btn .btn-item .item svg{ width: 24px; height: 24px; }
 
     /* main start */
     main{ padding-top: 11.25rem; z-index: 0; }
