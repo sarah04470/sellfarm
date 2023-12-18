@@ -149,11 +149,11 @@ main .guide-content .guide-area{ max-width: 1400px; width: 75%; margin: 0 auto; 
 main .guide-content .guide-area .guide-wrap{ position: relative; margin-bottom: 20px; padding: 0; }
 main .guide-content .guide-area .guide-wrap .sub-title{  }
 main .guide-content .guide-area .guide-wrap .sub-title h2{ text-align: center; padding: 50px 0; font-size: 32px; font-weight: 900; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap{ display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 100px; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap{ width: 100%; padding: 0 60px; border-bottom: 1px solid #074737; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list{ display: flex; flex-direction: row; justify-content: center; align-items: center; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item{ width: calc(100% / 5); }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ display: flex; width: 100%; height: 100px; text-align: center; align-items: center; justify-content: center; color: #777; font-size: 20px; font-weight: 400; transition: all 0.3s; }
+main .guide-content .guide-area .guide-wrap .userGuide-wrap{ display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 60px; }
+main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap{ width: 100%; padding: 0 20px; border-bottom: 1px solid #074737; }
+main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+/* main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item{ width: calc(100% / 8); } */
+main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ display: flex; width: 100%; height: 60px; padding: 0 28px; text-align: center; align-items: center; justify-content: center; color: #777; font-size: 18px; font-weight: 400; transition: all 0.3s; line-height: 1.2; }
 main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item.on{ color: #000; font-weight: 700; }
 main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap{ width: 100%; }
 main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item{ display: none; justify-content: center; align-items: center; }
@@ -170,9 +170,10 @@ main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .gui
 
 @media screen and (min-width: 1024px) and (max-width: 1366px){
 
-    main .guide-content .guide-area{ max-width: none; }
+    main .guide-content .guide-area{ max-width: none; width: 90%; }
     main .guide-content .guide-area .guide-wrap .sub-title h2{ padding: 42px 0; font-size: 28px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ font-size: 16px; }
+    main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap{ padding: 0 40px; }
+    main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ font-size: 14px; padding: 0 16px; }
 
 }
 
@@ -186,7 +187,8 @@ main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .gui
 
     main .guide-content .guide-area{ max-width: none; width: 90%; }
     main .guide-content .guide-area .guide-wrap .sub-title h2{ padding: 50px 0 20px; font-size: 28px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ height: 80px; font-size: 16px; }
+    main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap{ padding: 0 20px; }
+    main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ font-size: 14px; padding: 0 16px; }
 
 }
 
@@ -201,7 +203,9 @@ main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .gui
     main .guide-content .guide-area{ max-width: none; width: 90%; }
     main .guide-content .guide-area .guide-wrap .sub-title h2{ padding: 50px 0 20px; font-size: 18px; }
     main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap{ padding: 0; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ height: 80px; font-size: 12px; }
+    main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list{ display: flex;flex-wrap: wrap; }
+    main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item{ width: calc(100% / 4); }
+    main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ width: 100%; height: 40px; font-size: 12px; padding: 0; }
     main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item .item{ width: 90%; }
 
 }
