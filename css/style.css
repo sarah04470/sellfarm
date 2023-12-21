@@ -187,7 +187,7 @@ header nav .gnb-list .lnb-wrap .lnb-list .lnb-item .item{ text-decoration: none;
 
 
 /* floating menu start */
-.floatingSideMenu{ position: fixed; display: flex; flex-direction: column; gap: 1.25rem; width: 6.25rem; height: 23.75rem; top: calc(50% - 7.5rem); right: 3.75rem; justify-content: center; align-items: center; border: 0.047rem solid #074737; border-radius: 0.625rem; background-color: #fff; margin: 0 auto; font-family: 'Pretendard'; z-index: 1; transition: all 0.3s; }
+/* .floatingSideMenu{ position: fixed; display: flex; flex-direction: column; gap: 1.25rem; width: 6.25rem; height: 23.75rem; top: calc(50% - 7.5rem); right: 3.75rem; justify-content: center; align-items: center; border: 0.047rem solid #074737; border-radius: 0.625rem; background-color: #fff; margin: 0 auto; font-family: 'Pretendard'; z-index: 1; transition: all 0.3s; }
 .floatingSideMenu .logo-area{ width: 4.375rem; height: auto; }
 .floatingSideMenu .logo-area .logo-item{ width: 4.375rem; height: auto; }
 .floatingSideMenu .txt-area{  }
@@ -197,7 +197,7 @@ header nav .gnb-list .lnb-wrap .lnb-list .lnb-item .item{ text-decoration: none;
 .floatingSideMenu .txt-area .sideMenu-list .sideMenu-item:first-of-type:before{ width: 5rem; background-color: #074737; }
 .floatingSideMenu .txt-area .sideMenu-list .sideMenu-item .item{ font-size: 0.875rem; font-weight: 500; color: #000; letter-spacing: -0.02rem; text-align: center; }
 .floatingSideMenu.show{ opacity: 1; visibility: visible; }
-.floatingSideMenu.bottom{ position: absolute; bottom: 1.25rem; top: auto; }
+.floatingSideMenu.bottom{ position: absolute; bottom: 1.25rem; top: auto; } */
 /* .floatingSideMenu{  } */
 
 

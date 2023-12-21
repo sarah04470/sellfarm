@@ -161,9 +161,6 @@ html{ font-size: 16px; }
 body{ font-family: 'Pretendard', 'Apple SD Gothic Neo', '돋움', Dotum, 'Arial', 'Helvetica', Sans-serif; z-index: 0; overflow-x: hidden; box-sizing: border-box; }
 .container{ position: relative; }
 
-/* header{ display: none !important; }
-main{ padding: 0 !important; } */
-
 
 /* floating menu start */
 /* .floatingSideMenu{ position: fixed; display: flex; flex-direction: column; gap: 1.25rem; width: 6.25rem; height: 23.75rem; top: calc(50% - 7.5rem); right: 3.75rem; justify-content: center; align-items: center; border: 0.047rem solid #074737; border-radius: 0.625rem; background-color: #fff; margin: 0 auto; font-family: 'Pretendard'; z-index: 1; transition: all 0.3s; }
@@ -219,21 +216,6 @@ main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list 
 main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap{ width: 100%; }
 main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item{ display: none; justify-content: center; align-items: center; }
 main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item .item{ width: 80%; height: auto; transition: all 0.3s; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code{ display: none; flex-direction: column; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail{ margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 80px; width: 80%; padding: 60px 0; background-color: #41644a; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .item{ width: 90%; height: auto; transition: all 0.3s;  }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .border{ border-radius: 30px; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add{ display: flex; flex-direction: column; align-items: center; width: 90%; background-color: #fff; overflow: hidden; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .item{ width: 100%; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap{ width: 80%; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; padding-bottom: 60px; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap::before{ content: ""; display: block; width: 100%; height: 1px; background-color: #000; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .guide-cta-title{ font-family: 'Pretendard'; font-size: 2rem; font-weight: 700; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list{ display: flex; flex-direction: row; gap: 40px; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap{ width: 100%; height: 120px; margin: 0 auto; border-radius: 20px; overflow: hidden; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap .cta-item{ width: 100%; height: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 40px; background-color: #41644A; transition: all 0.3s; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap .cta-item:hover{ background-color: #193C22; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap .cta-item .cta-text{ font-family: 'GmarketSans'; font-size: 20px; font-weight: 500; line-height: 1.2; color: #fff; }
-main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap .cta-item .cta-text .cta-arrow{  }
 
 
 
@@ -241,39 +223,30 @@ main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .gui
 
 
 /**************************
-반응형 1250px start
+    반응형 1250px start
 **************************/
 
 @media screen and (min-width: 1024px) and (max-width: 1366px){
-    
+
     main .guide-content .guide-area{ max-width: none; width: 90%; }
     main .guide-content .guide-area .guide-wrap .sub-title h2{ padding: 42px 0; font-size: 28px; }
     main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap{ padding: 0 40px; }
     main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ font-size: 14px; padding: 0 16px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail{ gap: 60px; padding: 40px 0; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .border{ border-radius: 20px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap .cta-item{ padding: 32px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap .cta-item .cta-text{ font-size: 16px; }
+
 }
 
 
 
 /**************************
-해상도 낮은 태블릿 start
+    해상도 낮은 태블릿 start
 **************************/
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    
+
     main .guide-content .guide-area{ max-width: none; width: 90%; }
     main .guide-content .guide-area .guide-wrap .sub-title h2{ padding: 50px 0 20px; font-size: 28px; }
     main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap{ padding: 0 20px; }
     main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ font-size: 14px; padding: 0 16px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail{ gap: 40px; padding: 30px 0; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .border{ border-radius: 16px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list{ flex-direction: column; gap: 20px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap{ height: 100px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap .cta-item{ padding: 24px 40px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap .cta-item .cta-text{ font-size: 18px; }
 
 }
 
@@ -292,10 +265,5 @@ main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .gui
     main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item{ width: calc(100% / 4); }
     main .guide-content .guide-area .guide-wrap .userGuide-wrap .lnb-wrap .lnb-list .lnb-item .item{ width: 100%; height: 40px; font-size: 12px; padding: 0; }
     main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item .item{ width: 90%; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail{ width: 90%; gap: 40px; padding: 30px 0; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .border{ border-radius: 16px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list{ flex-direction: column; gap: 20px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap{ height: 100px; }
-    main .guide-content .guide-area .guide-wrap .userGuide-wrap .guide-img-wrap .guide-img-item.code .guide-detail .guide-deatil-add .guide-cta-wrap .cta-list .cta-wrap .cta-item .cta-text{ font-size: 18px; }
 
 }
