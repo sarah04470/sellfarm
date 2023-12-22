@@ -209,7 +209,7 @@ header nav .gnb-list .lnb-wrap .lnb-list .lnb-item .item{ text-decoration: none;
 /* floating menu start */
 .floatingSideMenu{ position: fixed; display: flex; flex-direction: column; gap: 1.25rem; width: 6.25rem; height: auto; top: calc(50% - 17.5rem); right: 3.75rem; justify-content: center; align-items: center; margin: 0 auto; font-family: 'Pretendard'; z-index: 1; transition: all 0.3s; }
 .floatingSideMenu .logo-area{ width: 4.375rem; height: auto; }
-.floatingSideMenu .logo-area .logo-item{ width: 4.375rem; height: auto; }
+.floatingSideMenu .logo-area .logo-item{ width: 4.375rem; height: auto; transition: all 0.3s ease-in-out; }
 .floatingSideMenu .txt-area{  }
 .floatingSideMenu .txt-area .sideMenu-list .sideMenu-item{ text-align: center; }
 .floatingSideMenu .txt-area .sideMenu-list .sideMenu-item::before{ content: ""; display: block; width: 3.75rem; height: 1px; margin: 0 auto 0.875rem; background-color: rgba(145, 166, 161, 0.60);  }
@@ -217,18 +217,22 @@ header nav .gnb-list .lnb-wrap .lnb-list .lnb-item .item{ text-decoration: none;
 .floatingSideMenu .txt-area .sideMenu-list .sideMenu-item:first-of-type:before{ width: 5rem; background-color: #074737; }
 .floatingSideMenu.show{ opacity: 1; visibility: visible; }
 .floatingSideMenu.bottom{ position: absolute; bottom: 1.25rem; top: auto; }
-.floatingSideMenu .floatMenu-wrap{ display: flex; flex-direction: column; gap: 0.75rem; width: 100%; height: 23.75rem; justify-content: center; align-items: center; border: 0.047rem solid #074737; border-radius: 0.625rem; background-color: #fff; }
+.floatingSideMenu .floatMenu-wrap{ display: flex; flex-direction: column; gap: 0.75rem; width: 100%; height: 23.75rem; justify-content: center; align-items: center; border: 0.047rem solid #074737; border-radius: 0.625rem; background-color: #fff; overflow: hidden; }
 .floatingSideMenu .floatMenu-wrap.ad{ height: 8.25rem; border: none; background-color: #000; }
 .floatingSideMenu .floatMenu-wrap.ad .item{ font-size: 0; }
 .floatingSideMenu .floatMenu-wrap.ad .logo-area{ width: 5.625rem; padding-top: 0.5rem; overflow: hidden; }
-.floatingSideMenu .floatMenu-wrap.ad .logo-area .logo-item{ width: 5.625rem; height: auto; animation: shaking 1s infinite; transition: all 0.5s ease-in-out; }
+.floatingSideMenu .floatMenu-wrap.ad .logo-area .logo-item{ width: 5.625rem; height: auto; animation: shaking 1s infinite; }
 .floatingSideMenu .floatMenu-wrap.ad:nth-of-type(2) .logo-area { width: 5rem; }
 .floatingSideMenu .floatMenu-wrap.ad:nth-of-type(2) .logo-area .logo-item{ width: 5rem; animation: shaking 1s infinite; animation-delay: 0.5s; }
-.floatingSideMenu .floatMenu-wrap.ad .logo-area .logo-item:hover{ animation: none; transform: scale(1.05); }
+.floatingSideMenu .floatMenu-wrap.ad:hover .logo-area .logo-item{ animation: none; transform: scale(1.05); }
 .floatingSideMenu .floatMenu-wrap .txt-area .sideMenu-list{ display: flex; flex-direction: column; gap: 0.875rem; justify-content: center; align-items: center; }
 .floatingSideMenu .floatMenu-wrap.ad .txt-area .sideMenu-list .sideMenu-item:before{ margin: 0 auto 0.75rem; }
 .floatingSideMenu .floatMenu-wrap.ad .txt-area .sideMenu-list .sideMenu-item:first-of-type:before{ width: 5rem; background-color: #fff; }
 .floatingSideMenu .floatMenu-wrap.ad .txt-area .sideMenu-list .sideMenu-item .item{ font-size: 0.75rem; color: #fff; }
+.floatingSideMenu .floatMenu-wrap.guideLinked{ height: 6.25rem; border: none; background-color: #2F4834; }
+.floatingSideMenu .floatMenu-wrap.guideLinked .logo-area{ width: 100%; height: 100%; padding-top: none; }
+.floatingSideMenu .floatMenu-wrap.guideLinked .logo-area .logo-item{ width: 100%; height: 100%; padding-top: none; }
+.floatingSideMenu .floatMenu-wrap.guideLinked:hover .logo-area .logo-item{ transform: scale(1.05); }
 
 
 /* main start */
