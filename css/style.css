@@ -207,7 +207,7 @@ header nav .gnb-list .lnb-wrap .lnb-list .lnb-item .item{ text-decoration: none;
 
 
 /* floating menu start */
-.floatingSideMenu{ position: fixed; display: flex; flex-direction: column; gap: 1.25rem; width: 6.25rem; height: auto; top: calc(50% - 17.5rem); right: 3.75rem; justify-content: center; align-items: center; margin: 0 auto; font-family: 'Pretendard'; z-index: 1; transition: all 0.3s; }
+.floatingSideMenu{ position: fixed; display: flex; flex-direction: column; gap: 1.25rem; width: 6.25rem; height: auto; top: calc(50% - 15rem); right: 3.75rem; justify-content: center; align-items: center; margin: 0 auto; font-family: 'Pretendard'; z-index: 1; transition: all 0.3s; }
 .floatingSideMenu .logo-area{ width: 4.375rem; height: auto; }
 .floatingSideMenu .logo-area .logo-item{ width: 4.375rem; height: auto; transition: all 0.3s ease-in-out; }
 .floatingSideMenu .txt-area{  }
