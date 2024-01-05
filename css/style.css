@@ -1130,7 +1130,7 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
     .ranking-mob-wrap .menu-all-area .title{ font-size: 1.125rem; font-family: 'Pretendard'; font-weight: 700; color: #000; }
     .ranking-mob-wrap .menu-all-area .keywords-wrap{ display: flex; white-space: nowrap; }
     .ranking-mob-wrap .menu-all-area .keywords-wrap .keywords-list{ display: flex; flex-direction: row; align-items: flex-start; gap: 6px; padding-left: 10px; white-space: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .ranking-mob-wrap .menu-all-area .keywords-wrap .keywords-list .keywords-item{ display: flex; padding: 5px 14px; justify-content: center; align-items: center; border-radius: 20px; border: 1px solid #91A6A1; background-color: #fff; color: #074737; text-align: center; font-size: 0.875rem; font-weight: 700; line-height: normal; }
+    .ranking-mob-wrap .menu-all-area .keywords-wrap .keywords-list .keywords-item{ display: flex; padding: 5px 14px; justify-content: center; align-items: center; border-radius: 20px; border: 1px solid #91A6A1; background-color: #fff; color: #074737; text-align: center; font-family: 'Pretendard'; font-size: 0.875rem; font-weight: 700; line-height: normal; }
     
     .ranking-mob-wrap .menu-all-area .keyword-slick-wrap{ width: 100%; display: flex; flex-direction: column; gap: 10px; }
     .ranking-mob-wrap .menu-all-area .slick-track{ display: flex; justify-content: space-between; align-items: flex-start; }
@@ -1139,7 +1139,7 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
     .ranking-mob-wrap .menu-all-area .slick-dots li button{ font-size: 0; }
     .ranking-mob-wrap .menu-all-area .slick-dots .slick-active{ background-color: #074737; }
     .ranking-mob-wrap .menu-all-area .keyword-slick-wrap .keyword-slick-list{ display: flex; width: 100%; height: 110px; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center; align-content: center; gap: 0px 30px; }
-    .ranking-mob-wrap .menu-all-area .keyword-slick-wrap .keyword-slick-list .keyword-slick-item{ display: flex; width: 80%; padding: 8px 0; align-items: center; justify-content: space-between; font-size: 0.875rem; font-weight: 700; color: #999; line-height: normal; }
+    .ranking-mob-wrap .menu-all-area .keyword-slick-wrap .keyword-slick-list .keyword-slick-item{ display: flex; width: 80%; padding: 8px 0; align-items: center; justify-content: space-between; font-family: 'Pretendard'; font-size: 0.875rem; font-weight: 700; color: #999; line-height: normal; }
     .ranking-mob-wrap .menu-all-area .keyword-slick-wrap .keyword-slick-list .keyword-slick-item .ranking-txt-wrap{ display: flex; flex-direction: row; gap: 12px; width: 85%; }
     .ranking-mob-wrap .menu-all-area .keyword-slick-wrap .keyword-slick-list .keyword-slick-item .ranking-txt-wrap .rank-num{  }
     .ranking-mob-wrap .menu-all-area .keyword-slick-wrap .keyword-slick-list .keyword-slick-item .ranking-txt-wrap .rank-goods{ width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
