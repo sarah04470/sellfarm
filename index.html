@@ -1870,21 +1870,35 @@
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 var rollingList = document.querySelector('.ranking-rolling-wrap ul');
-                var rollingItemHeight = document.querySelector('.ranking-rolling-wrap ul li').offsetHeight;
-                var firstItem;
-        
-                setInterval(function() {
-                    firstItem = rollingList.firstElementChild.cloneNode(true);
-                    rollingList.appendChild(firstItem);
-                    rollingList.style.transition = 'transform 0.5s ease-in-out';
-                    rollingList.style.transform = 'translateY(-' + rollingItemHeight + 'px)';
-        
+                var rollingItems = rollingList.querySelectorAll('li');
+                var rollingSpeed = 2500; // 롤링 속도 (밀리초 단위)
+
+                // 각 목록 항목에 트랜지션 추가
+                rollingItems.forEach(function(item) {
+                    item.style.transition = 'transform 0.5s ease-in-out';
+                });
+
+                // 롤링 목록을 위한 함수
+                function rollList() {
+                    // 첫 번째 항목을 보이지 않게 이동
+                    rollingList.style.transform = 'translateY(-100%)';
+
                     setTimeout(function() {
+                        // 트랜지션 재설정 및 첫 번째 항목을 마지막으로 이동
                         rollingList.style.transition = 'none';
                         rollingList.style.transform = 'translateY(0)';
+                        rollingList.appendChild(rollingList.firstElementChild.cloneNode(true));
                         rollingList.removeChild(rollingList.firstElementChild);
-                    }, 500);
-                }, 2500);
+
+                        // 짧은 딜레이 후에 연속적인 롤링을 위해 트랜지션 재추가
+                        setTimeout(function() {
+                            rollingList.style.transition = 'transform 0.5s ease-in-out';
+                        }, 50);
+                    }, 500); // 딜레이는 트랜지션 지속 시간과 일치해야 함
+                }
+
+                // 롤링 목록 시작
+                setInterval(rollList, rollingSpeed);
             });
         </script>
         
@@ -1898,36 +1912,6 @@
                 // '.ranking-window' 표시 상태 토글
                 rankingWindow.style.display = rankingWindow.style.display === 'flex' ? 'none' : 'flex';
                 arrow.style.transform = rankingWindow.style.display === 'flex' ? 'rotate(180deg)' : 'rotate(0deg)';
-            });
-
-            // 문서 로드 완료 후 이벤트 바인딩
-            document.addEventListener('DOMContentLoaded', function() {
-                var searchForm = document.querySelector('.search-input');
-                var mobWrap = document.querySelector('.ranking-mob-wrap');
-                var prevBtn = document.querySelector('.ranking-mob-wrap .menu-area .prev-btn');
-
-                // 검색 폼 클릭 이벤트
-                searchForm.addEventListener('click', function(event) {
-                    event.preventDefault(); // 기본 이벤트 막기
-                    mobWrap.style.right = '0';
-
-                    // 약간의 지연 후 입력 필드에 포커스
-                    setTimeout(function() {
-                        searchForm.focus();
-                    }, 300); // 300ms 후에 실행
-                });
-
-                // 이전 버튼 클릭 이벤트
-                prevBtn.addEventListener('click', function() {
-                    mobWrap.style.right = '-150%';
-                });
-
-                // Escape 키 이벤트
-                document.addEventListener('keydown', function(event) {
-                    if (event.key === 'Escape') {
-                        mobWrap.style.right = '-150%';
-                    }
-                });
             });
         </script>
 

@@ -212,7 +212,7 @@ header nav .gnb-list .lnb-wrap .lnb-list .lnb-item .item{ text-decoration: none;
 
 header nav .gnb-list .lnb-wrap .ranking-wrap{ width: 360px; position: relative; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap{ display: flex; flex-direction: row; justify-content: space-between; height: 40px; position: relative; overflow: hidden; padding: 10px 20px; }
-header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-list{ width: 80%; display: flex; flex-direction: column; gap: 20px; }
+header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-list{ width: 80%; display: flex; flex-direction: column; gap: 20px; transition: all 0.5s ease-in-out; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-list .ranking-rolling-item{ display: flex; flex-direction: row; gap: 20px; align-items: center; width: 100%; height: 40px; font-family: 'Pretendard'; font-size: 1rem; font-weight: 700; color: #999; transition: all 0.5s ease-in-out; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-list .ranking-rolling-item .rank-num{  }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-list .ranking-rolling-item .rank-goods{ width: 80%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;  }
