@@ -211,7 +211,7 @@ header nav .gnb-list .lnb-wrap .lnb-list .lnb-item{  }
 header nav .gnb-list .lnb-wrap .lnb-list .lnb-item .item{ text-decoration: none; color: #000; font-size: 1rem; font-family: 'Pretendard'; }
 
 header nav .gnb-list .lnb-wrap .ranking-wrap{ width: 360px; position: relative; }
-header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap{ display: flex; flex-direction: row; justify-content: space-between; height: 40px; position: relative; overflow: hidden; padding: 10px 20px; }
+header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap{ display: flex; flex-direction: row; justify-content: space-between; width: 360px; height: 40px; position: relative; overflow: hidden; padding: 10px 20px; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-list{ width: 80%; display: flex; flex-direction: column; gap: 20px; transition: all 0.5s ease-in-out; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-list .ranking-rolling-item{ display: flex; flex-direction: row; gap: 20px; align-items: center; width: 100%; height: 40px; font-family: 'Pretendard'; font-size: 1rem; font-weight: 700; color: #999; transition: all 0.5s ease-in-out; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-list .ranking-rolling-item .rank-num{  }
@@ -219,7 +219,7 @@ header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-roll
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-arrow{  }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-arrow svg{ transition: all 0.2s; }
 
-header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window{ position: absolute; display: none; flex-direction: column; justify-content: center; gap: 30px; width: 100%; height: 450px; padding: 28px 40px; right: 0; top: -420px; background-color: #fff; border-radius: 0px 0px 10px 10px; box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.2); transition: all 0.3s; }
+header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window{ position: absolute; display: none; flex-direction: column; justify-content: center; gap: 30px; width: 100%; height: 450px; padding: 28px 40px; right: 0; top: 60px; background-color: #fff; border-radius: 0px 0px 10px 10px; box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.2); transition: all 0.3s; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-title-wrap{ display: flex; flex-direction: row; align-items: center; justify-content: flex-start; gap: 20px; width: 100%; font-family: 'Pretendard'; font-size: 1.25rem; font-weight: 700; color: #999; transition: all 0.5s ease-in-out; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-title-wrap .ranking-title{ cursor: pointer; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-title-wrap .ranking-title.on{ color: #000; }
@@ -450,6 +450,7 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
     header nav .gnb .nav-btn .menu-info-wrap .menu-info-list .menu-info-btn .btn-item .item svg{ width: 24px; height: 24px; }
 
     header nav .gnb-list .lnb-wrap .ranking-wrap{ width: 280px; }
+    header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap{ width: 280px; }
     header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window{ padding: 28px; height: 400px; gap: 20px; justify-content: flex-end; }
     header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-title-wrap{ font-size: 1rem; }
     header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item{ font-size: 0.875rem; font-weight: 600; }
@@ -640,6 +641,7 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
     header nav .gnb-list .lnb-wrap .lnb-list .lnb-item .item{ text-decoration: none; color: #000; font-size: 0.75rem; font-family: 'Pretendard'; }
 
     header nav .gnb-list .lnb-wrap .ranking-wrap{ width: 280px; }
+    header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap{ width: 280px; }
     header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-rolling-wrap .ranking-rolling-list .ranking-rolling-item{ font-size: 0.875rem; font-weight: 700; }
     header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window{ padding: 28px; height: 400px; gap: 20px; justify-content: flex-end; }
     header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-title-wrap{ font-size: 1rem; }
@@ -1130,7 +1132,10 @@ footer .footer-wrap .footer-copyright .copyright-item{ font-size: 0.75rem; }
     .ranking-mob-wrap .menu-all-area .title{ font-size: 1.125rem; font-family: 'Pretendard'; font-weight: 700; color: #000; }
     .ranking-mob-wrap .menu-all-area .keywords-wrap{ display: flex; white-space: nowrap; }
     .ranking-mob-wrap .menu-all-area .keywords-wrap .keywords-list{ display: flex; flex-direction: row; align-items: flex-start; gap: 6px; padding-left: 10px; white-space: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .ranking-mob-wrap .menu-all-area .keywords-wrap .keywords-list .keywords-item{ display: flex; padding: 5px 14px; justify-content: center; align-items: center; border-radius: 20px; border: 1px solid #91A6A1; background-color: #fff; color: #074737; text-align: center; font-family: 'Pretendard'; font-size: 0.875rem; font-weight: 700; line-height: normal; }
+    .ranking-mob-wrap .menu-all-area .keywords-wrap .keywords-list .keywords-item{ display: flex; padding: 5px 14px; justify-content: center; align-items: center; border-radius: 20px; border: 1px solid #91A6A1; background-color: #fff; color: #074737; text-align: center; font-family: 'Pretendard'; font-size: 0.875rem; font-weight: 700; line-height: normal; transition: all 0.1s; }
+    .ranking-mob-wrap .menu-all-area .keywords-wrap .keywords-list .keywords-item:hover,
+    .ranking-mob-wrap .menu-all-area .keywords-wrap .keywords-list .keywords-item:focus,
+    .ranking-mob-wrap .menu-all-area .keywords-wrap .keywords-list .keywords-item:active{ background-color: #074737; color: #fff; }
     
     .ranking-mob-wrap .menu-all-area .keyword-slick-wrap{ width: 100%; display: flex; flex-direction: column; gap: 10px; }
     .ranking-mob-wrap .menu-all-area .slick-track{ display: flex; justify-content: space-between; align-items: flex-start; }
