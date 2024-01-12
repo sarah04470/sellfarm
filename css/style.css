@@ -228,6 +228,10 @@ header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-li
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%; padding: 8px 0; font-family: 'Pretendard'; font-size: 1rem; font-weight: 700; color: #999; transition: all 0.5s ease-in-out; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item .ranking-txt-wrap{ display: flex; flex-direction: row; width: 85%; gap: 12px; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item .ranking-txt-wrap .rank-num{  }
+/* header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item .ranking-txt-wrap.bold{ font-size: 1.125rem; }
+header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item .ranking-txt-wrap .rank-num.first{ color: #F5B30B; font-weight: 900; }
+header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item .ranking-txt-wrap .rank-num.second{ color: #CCC; font-weight: 900; }
+header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item .ranking-txt-wrap .rank-num.third{ color: #C7762A; font-weight: 900; } */
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item .ranking-txt-wrap .rank-goods{ width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item .ranking-arrow{ display: flex; align-items: center; justify-content: center; }
 header nav .gnb-list .lnb-wrap .ranking-wrap .ranking-window .ranking-rolling-list .ranking-rolling-item .ranking-arrow:hover{  }
