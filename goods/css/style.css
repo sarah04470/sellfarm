@@ -182,9 +182,9 @@ main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wra
 main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-icon-list{ display: flex; flex-direction: row; align-items: center; gap: 0.625rem; }
 main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-icon-list .goods-icon-item{ display: flex; padding: 1px 10px; justify-content: center; align-items: center; font-family: 'Pretendard'; font-size: 0.875rem; font-weight: 700; line-height: normal; border-radius: 6px; }
 main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-icon-list .icon-best{ color: #FF2C2C; background-color: #FFE4E4; }
-main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-icon-list .icon-new{ color: #074737; background-color: #D7EDE7; }
-main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-icon-list .icon-pick{ color: #4267EB; background-color: #DBE1F6; }
-main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-icon-list .icon-soldOut{ color: #C96F6F; background-color: #FFEAEA; }
+main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-icon-list .icon-new{ color: #4267EB; background-color: #DBE1F6; }
+main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-icon-list .icon-pick{ color: #074737; background-color: #D7EDE7; }
+main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-icon-list .icon-soldOut{ color: #AD5555; background-color: #E0E0E0; }
 
 .floatingSideMenu{ display: none; }
 
@@ -206,6 +206,7 @@ main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wra
     main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-title{ font-size: 0.875rem; }
     main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-detail-txt{ font-size: 1.125rem; font-weight: 700; }
     main .goods .goods-wrap .goods-list-area .goods-list .goods-item .goods-item-wrap .goods-text .goods-icon-list .goods-icon-item{ padding: 1px 8px; font-size: 0.75rem; border-radius: 4px; }
+    
 }
 
 
